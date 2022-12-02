@@ -1,9 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Syne Mono', monospace;;
+}
 :root {
   --magenta-color: #991e66;
   --blue-dark-color: #00072d;
   --blue-rey-color: #001c55;
   --blue-color: #0e6ba8;
   --blue-light-color: #a6e1fa;
+  --white-color: #ffffff;
   
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

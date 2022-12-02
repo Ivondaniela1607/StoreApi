@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
-
-  constructor() { }
+  cosas:any[] = []
+  constructor(
+    private readonly router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  login(){
+    this.router.navigate(['home']);
   }
 
 }

@@ -1,0 +1,132 @@
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--blue-dark-color);
+  color: var(--blue-light-color);
+}
+
+.car{
+  width: 30px;
+  height: 30px;
+  fill: var(--blue-light-color);
+}
+
+
+
+.heroDetail {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.heroImg img {
+  height: calc(100vh - 80px);
+  width: 100%;
+  object-fit: cover;
+}
+
+.heroInfo {
+  padding: 50px;
+  color: var(--white-color);
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroInfo p {
+  font-size: 20px;
+}
+
+.heroInfo button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--magenta-color);
+  border-radius: 10px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.heroInfo button:hover{
+
+  color: var(--blue-light-color);
+
+}
+
+.heroInfo input {
+  height: 35px;
+  width: 70%;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+h1{
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/* featured */
+
+h2 {
+  font-size: 50px;
+  color: var(--magenta-color);
+
+}
+.featured{
+
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.containerItems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 100px;
+  column-gap: 40px;
+  margin-top: 40px;
+}
+
+.item {
+  width: 250px;
+  height: 300px;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  display:flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.item:hover img {
+  opacity: 0.3;
+}
+
+.item:hover .middle {
+  opacity: 1;
+}
+
+.opcBtn {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--blue-dark-color);
+  color: white;
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,53 @@
+.containerShopping{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 40px;
+  margin-top: 40px;
+
+}
+
+.item{
+  width: 500px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 18px;
+  box-shadow: 2px 0px 20px 0px #d8cbcb;
+  border-radius: 10px;
+  padding: 20px 0;
+
+}
+
+.item img {
+  width: 80%;
+  height: 260px;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 auto;
+}
+
+.detailItem{
+  padding: 20px 40px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+}
+
+strong {
+  color: var(--blue-dark-color);
+  font-size: 22px;
+}
+
+.detailItem button {
+  background-color: var(--magenta-color);
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: var(--white-color);
+  width: 100px;
+  margin: 10px auto;
+}

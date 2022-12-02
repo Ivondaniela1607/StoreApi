@@ -1,1 +1,13 @@
-<p>shopping-cart works!</p>
+<div>
+  <app-header></app-header>
+  <div class="containerShopping">
+    <div class="item" *ngFor="let item of items">
+      <img src="{{item.image}}" alt="">
+      <div class="detailItem">
+        <p><strong>Title:</strong>  {{item.title}}</p>
+        <p><strong>Price:</strong> $ {{item.price}}</p>
+        <button (click)="deleteItem(item)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

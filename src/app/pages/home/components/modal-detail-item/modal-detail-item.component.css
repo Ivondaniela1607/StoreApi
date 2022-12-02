@@ -1,0 +1,27 @@
+.cancelar {
+  cursor: pointer;
+}
+
+.item{
+  height: 300px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 18px;
+  padding: 20px 0;
+
+}
+
+.item img {
+  width: 80%;
+  height: 260px;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 auto;
+}
+
+.detailItem{
+  padding: 20px 40px 20px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}

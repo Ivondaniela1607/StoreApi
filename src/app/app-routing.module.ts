@@ -1,14 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/page/home/home.component';
+import { AuthComponent } from './pages/login/auth/auth.component';
+import { ShoppingCartComponent } from './pages/shoppingCart/page/shopping-cart/shopping-cart.component';
 
 const routes: Routes = [
   {
     path: 'login',
-    loadChildren:() => import('./pages/login/login.module').then(m => m.LoginModule)
+    component: AuthComponent
   },
   {
     path: 'home',
-    loadChildren:() => import('./pages/home/home.module').then(m => m.HomeModule)
+    component: HomeComponent
+  },
+  {
+    path: 'shoppingCart',
+    component: ShoppingCartComponent
   },
   {
     path: '**',

@@ -1,0 +1,23 @@
+<div class="modal-header">
+  <div class="d-flex justify-content-between w-100 align-items-center">
+    <h4 class="modal-title text-dark">Detail item</h4>
+  </div>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+  <div>
+      <div class="item" >
+        <img src="{{item.image}}" alt="">
+        <div class="detailItem">
+          <p><strong>Title:</strong>  {{item.title}}</p>
+          <p><strong>Price:</strong> $ {{item.price}}</p>
+          <p><strong>Description:</strong> $ {{item.description}}</p>
+
+        </div>
+      </div>
+  </div>
+</div>
+<div (click)="modal.dismiss('Cross click')"  class="modal-footer">
+  <p class="text-primary cancelar">Cancelar</p>
+</div>
+
